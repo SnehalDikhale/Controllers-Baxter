@@ -140,10 +140,8 @@ Tau = subs(Tau,[t1(t), t2(t),t3(t), t4(t), t5(t), t6(t), t7(t),diff(t1(t),t,t),d
 % %%
 %The Inertia matrix(M)
 % syms IM(g,th1, th2,th3, th4, th5, th6, th7,th1_d, th2_d, th3_d,th4_d, th5_d, th6_d, th7_d)
- IM = equationsToMatrix(Tau,[th1_dd th2_dd th3_dd th4_dd th5_dd th6_dd,th7_dd]);
-
-%M = subs(IM,[g,th1, th2,th3, th4, th5, th6, th7,th1_d, th2_d, th3_d,th4_d, th5_d, th6_d, th7_d],[9.8,q(1),q(2),q(3),q(4),q(5),q(6),q(7),dq(1),dq(2),dq(3),dq(4),dq(5),dq(6),dq(7)]);
-%M = IM(9.8,q(1),q(2),q(3),q(4),q(5),q(6),q(7),dq(1),dq(2),dq(3),dq(4),dq(5),dq(6),dq(7))
+IM = equationsToMatrix(Tau,[th1_dd th2_dd th3_dd th4_dd th5_dd th6_dd,th7_dd]);
+M = subs(IM,[g,th1, th2,th3, th4, th5, th6, th7,th1_d, th2_d, th3_d,th4_d, th5_d, th6_d, th7_d],[9.8,q(1),q(2),q(3),q(4),q(5),q(6),q(7),dq(1),dq(2),dq(3),dq(4),dq(5),dq(6),dq(7)]);
 M =vpa(M,3);
 
 
