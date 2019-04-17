@@ -1,1 +1,1 @@
-# Dynamic_Model-Baxter
+# Controller Implementation on Baxter Robot
