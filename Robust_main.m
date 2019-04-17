@@ -7,7 +7,7 @@ close all;
 tf=5;
 q=[10,10,10,10,10,10,10]; %Joint Angle
 dq=[0.5,0.5,0.5,0.5,0.5,0.5,0.5]; %Joint Angle
-[M,C,G]= new_baxter_dynamics(q,dq)
+[M,C,G]= new_baxter_dynamics_copy(q,dq)
 % q0=-10; q0_f=80;
 % dq0 =0.5; dq0_f = 0.4;
 % 
